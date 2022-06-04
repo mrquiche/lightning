@@ -1,16 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <body>
+  <div id="app" class="flexItem">
+    <h1>Mr. Quiche</h1>
+    <div class="searchBox">
+        <pubkey-search-bar></pubkey-search-bar>
+    </div>
+    <h3></h3>
+  </div>
+  </body>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import PubkeySearchBar from "@/components/PubkeySearchBar";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {PubkeySearchBar}
 }
 </script>
 
